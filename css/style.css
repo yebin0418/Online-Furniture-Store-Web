@@ -16,49 +16,68 @@ body{
 @-webkit-keyframes maintransition {
     0% { background-image:url(main.jpg);}
     30% { background-image:url(third.jpg);}
-	60% { background-image:url(second.jpg);}
-	100% { background-image:url(fourth.jpg);}
+    60% { background-image:url(second.jpg);}
+    100% { background-image:url(fourth.jpg);}
 }
 
 @keyframes maintransition {
     0% { background-image:url(main.jpg);}
     30% { background-image:url(third.jpg);}
-	60% { background-image:url(second.jpg);}
-	100% { background-image:url(fourth.jpg);}
+    60% { background-image:url(second.jpg);}
+    100% { background-image:url(fourth.jpg);}
 }
-.container{
-  color: white;
-  width: 80%;
+.topnav{
   overflow: hidden;
 }
 
 header{
-
   padding-top: 4px;
   min-height: 30px;
   border-bottom: darkkhaki 3px solid;
   font-style: italic;
   font: bickley;
 }
-header a{
+header #branding{
+  float: left;
+  margin-top: -30px;
   color: white;
+}
+.topnav a{
+  color: white;
+  display: block;
+  float:left;
+  text-decoration: none;
   test-transform: uppercase;
   font-size: 16px;
   font-style: normal;
   font: monospace;
-}
-header li{
-  folat: right;
-  display: inline;
   padding: 0 20px 0 20px;
+}
+.topnav a:hover{
+  background-color: darkkhaki;
+  color: white;
+}
 
+.topnav .icon {
+  display: none;
 }
-header #branding{
-  float: left;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+   float: right;
+   display: block;
+  }
 }
-header #branding h1{
-  margin: 0;
-}
-header nav{
-  float: left;
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
