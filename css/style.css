@@ -3,7 +3,28 @@ body{
   font-size: 15px;
   line-height: 1.5;
   background-image:url(main.jpg);
+  background-image:url(second.jpg);
+  background-image:url(third.jpg);
+  background-image:url(fourth.jpg);
   background-size: cover;
+  -webkit-animation-name: maintransition; 
+  -webkit-animation-duration:  17s; 
+  animation-name:  maintransition;
+  animation-duration: 17s;  
+  animation-iteration-count:infinite;
+}
+@-webkit-keyframes maintransition {
+    0% { background-image:url(main.jpg);}
+    30% { background-image:url(third.jpg);}
+	60% { background-image:url(second.jpg);}
+	100% { background-image:url(fourth.jpg);}
+}
+
+@keyframes maintransition {
+    0% { background-image:url(main.jpg);}
+    30% { background-image:url(third.jpg);}
+	60% { background-image:url(second.jpg);}
+	100% { background-image:url(fourth.jpg);}
 }
 .container{
   color: white;
@@ -40,7 +61,4 @@ header #branding h1{
 }
 header nav{
   float: left;
-}
-section .showcase {
-  background-color: darkgreen;
 }
