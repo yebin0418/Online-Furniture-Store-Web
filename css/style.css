@@ -1,5 +1,5 @@
 .mainpage{
-  font-family: Arial, Halvetica, sans-serif;
+  font-family: monospace, Halvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
   background-image:url(main.jpg);
@@ -16,22 +16,21 @@
 @-webkit-keyframes maintransition {
   0% { background-image:url(main.jpg);}
   30% { background-image:url(third.jpg);}
-	60% { background-image:url(second.jpg);}
-	100% { background-image:url(fourth.jpg);}
+  60% { background-image:url(second.jpg);}
+  100% { background-image:url(fourth.jpg);}
 }
 
 @keyframes maintransition {
   0% { background-image:url(main.jpg);}
   30% { background-image:url(third.jpg);}
-	60% { background-image:url(second.jpg);}
-	100% { background-image:url(fourth.jpg);}
+  60% { background-image:url(second.jpg);}
+  100% { background-image:url(fourth.jpg);}
 }
 .topnav{
   overflow: hidden;
   left: 5%;
 }
 header{
-  padding-top: 4px;
   min-height: 30px;
   font-style: italic;
   font: bickley;
@@ -49,8 +48,7 @@ header #branding{
   text-transform: uppercase;
   font-size: 16px;
   font-style: normal;
-  font: monospace;
-  padding: 0 20px 0 20px;
+  padding: 0px 20px 0px 30px;
 }
 .topnav a:hover{
 	background-color: darkkhaki;
@@ -78,35 +76,4 @@ header #branding{
     display: block;
     text-align: left;
   }
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-.image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
-.over{
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: LightSkyBlue;
-}
-.container:hover .over{
-  opacity: 1;
-}
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
