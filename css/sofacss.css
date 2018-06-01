@@ -1,0 +1,95 @@
+body{
+ background-color: grey;
+ font-style: normal;
+ font-family: monospace, Halvetica, sans-serif;
+}
+header #topani{
+  -webkit-animation: animate;
+  -webkit-animation-duration: 3s;	
+  animation: animate;
+  animation-duration:3s;
+  position: relative;
+  animation-fill-mode: forwards;
+  font-family:"Bradley Hand ITC", "Comic Sans MS";
+  font-size: 1vw;
+  color: lavender;
+  width:0;
+}
+@-webkit-keyframes animate {
+    from {left: 0px;}
+    to {left: 50%;}
+}
+@keyframes animate {
+    from {left: 0px;}
+	to {left: 50%;}
+}
+.container1 {
+  position: relative;
+  width: 50%;
+  left: 40%;
+  display: inline-block;
+}
+.s1 {
+  position: relative;
+  width: 50%;
+}
+.over{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: LightSkyBlue;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.container1:hover .over{
+  width:50%;
+}
+.s2{
+  width: 50%;
+  position: relative;
+}
+.over2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: pink;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.container1:hover .over2{
+	width: 50%;
+}
+.s3{
+  width: 50%;
+  position: relative;
+}
+.over3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: plum;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.container1:hover .over3{
+	width: 50%;
+}
+.text {
+  color: white;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
