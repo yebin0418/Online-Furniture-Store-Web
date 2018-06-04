@@ -37,7 +37,7 @@ header{
 }
 header #branding{
   float: left;
-  margin-top: -30px;
+  margin-top: -23px;
   color: white;
 }
 .topnav a{
@@ -48,7 +48,7 @@ header #branding{
   text-transform: uppercase;
   font-size: 16px;
   font-style: normal;
-  padding: 0px 20px 0px 30px;
+  padding: 0px 50px 0px 50px;
 }
 .topnav a:hover{
 	background-color: darkkhaki;
@@ -76,4 +76,97 @@ header #branding{
     display: block;
     text-align: left;
   }
+}
+
+/*input fields*/
+input[type=text], input[type=password]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid darkkhaki;
+	box-sizing: border-box;
+}
+.main{
+	color: white;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	display:block;
+}
+.sb{
+	border: 1px solid darkkhaki;
+	background-color:lavenderblush;
+}
+button:hover{
+	opacity:0.8;
+}
+.cancelbtn{
+	width: auto;
+	padding: 10px 18px;
+	background-color: white;
+	border: 2px solid darkkhaki;
+}
+.container{
+	padding: 16px;
+}
+span.psw{
+	float: right;
+	padding-top: 16px;
+}
+
+/*background*/
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	/*black with opacity*/
+	background-color:rgba(0,0,0,0.4);
+	padding-top:60px;
+}
+.modal-content{
+	background-color:lavenderblush;
+	margin: 5% auto 15% auto;
+	border: 1px solid #888;
+	width: 80%;
+}
+.close{
+	position: absolute;
+	right: 25px;
+	top:0;
+	color: pink;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: darkkhaki;
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }

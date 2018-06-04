@@ -5,7 +5,7 @@ body{
 }
 header #topani{
   -webkit-animation: animate;
-  -webkit-animation-duration: 3s;	
+  -webkit-animation-duration: 3s;
   animation: animate;
   animation-duration:3s;
   position: relative;
