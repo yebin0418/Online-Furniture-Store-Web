@@ -50,15 +50,52 @@ header #branding{
   font-style: normal;
   padding: 0px 50px 0px 50px;
 }
-.topnav a:hover{
+.topnav a:hover, .dropdown:hover
+.dropbtn{
 	background-color: darkkhaki;
 	color: white;
 }
 .topnav .icon {
   display: none;
 }
+.dropdown{
+	float: left;
+	overflow: hidden;	
+}
+.dropdown .dropbtn{
+	font-size: 16px;
+	border: none;
+	outline:none;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+	margin:0;
+	padding: 0px 50px 0px 50px;
+}
+.dropdown-content{
+	display:none;
+	position: absolute;
+	min-width:170px;
+    box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-size:13px;
+}
+.dropdown-content a:hover {
+    background-color: darkkhaki;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child), .dropdown .dropbtn  {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -76,6 +113,13 @@ header #branding{
     display: block;
     text-align: left;
   }
+   .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 /*input fields*/
@@ -91,7 +135,7 @@ input[type=text], input[type=password]{
 	color: white;
 	border: none;
 	cursor: pointer;
-	width: 100%;
+	width: 100%;	
 	display:block;
 }
 .sb{
@@ -140,10 +184,10 @@ span.psw{
     position: relative;
 }
 .close{
-    position: absolute;
-    right: 25px;
-    top:0;
-    color: pink;
+	position: absolute;
+	right: 25px;
+	top:0;
+	color: pink;
     font-size: 35px;
     font-weight: bold;
 }
@@ -157,11 +201,11 @@ span.psw{
     animation: animatezoom 0.6s
 }
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
+    from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
 }
 @keyframes animatezoom {
-    from {transform: scale(0)}
+    from {transform: scale(0)} 
     to {transform: scale(1)}
 }
 @media screen and (max-width: 300px) {
