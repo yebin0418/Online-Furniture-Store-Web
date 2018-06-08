@@ -1,4 +1,4 @@
-.mainpage{
+mainpage{
   font-family: monospace, Halvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -37,11 +37,11 @@ header{
 }
 header #branding{
   float: left;
-  margin-top: -23px;
+  margin-top: -24px;
   color: white;
 }
 .topnav a{
-  color: white;
+  color: black;
   display: block;
   float:left;
   text-decoration: none;
@@ -55,6 +55,7 @@ header #branding{
 	background-color: darkkhaki;
 	color: white;
 }
+
 .topnav .icon {
   display: none;
 }
@@ -66,7 +67,7 @@ header #branding{
 	font-size: 16px;
 	border: none;
 	outline:none;
-	color: white;
+	color: black;
 	background-color: inherit;
 	font-family: inherit;
 	margin:0;
@@ -90,6 +91,7 @@ header #branding{
 }
 .dropdown-content a:hover {
     background-color: darkkhaki;
+	color:black;
 }
 .dropdown:hover .dropdown-content {
     display: block;
