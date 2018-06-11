@@ -10,9 +10,9 @@ header #topani{
   animation-duration:3s;
   position: relative;
   animation-fill-mode: forwards;
-  font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
-  font-size: 1.5vw;
-  color: peru;
+  font:Snell Roundhand, cursive;
+  font-size: 1vw;
+  color: crimson;
   width:0;
 }
 @-webkit-keyframes animate {
