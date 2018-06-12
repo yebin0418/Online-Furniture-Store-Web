@@ -1,7 +1,6 @@
  .mainpage{
   font-family: monospace, Halvetica, sans-serif;
   font-size: 15px;
-  width: 100%; height: 100%;
   background-image: url(g.png);
   background-image: url(p.png);
   -webkit-animation-name: maintransition;
