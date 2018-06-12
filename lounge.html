@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lounge Chair</title>
+<meta name="viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="./css/loungechairs.css">
+<link rel = "stylesheet" href="./css/main.css">
+<script src ="./js/script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header>
+<div class="topnav" id="myTopnav">
+ <a href="index.html">Home</a>
+ <div class="dropdown">
+ 	<button class="dropbtn">Chairs
+	<i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+		<a href="armchairs.html">ARMCHAIRS</a>
+		<a href="lounge.html">LOUNGE</a>
+ 	</div>
+</div>
+ <a href="sofas.html">Sofas</a>
+ <a href="#contact us">Contact us</a>
+ <a button class= main onclick="document.getElementById('signin').style.display='block'"style="width:auto;">SIGN IN</button></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+ </a>
+ </div>
+<div id="signin" class="modal">
+	<form class="modal-content animate" >
+		<span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+
+			<button type = "submit" class=sb>Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</div>
+
+		<div class="container" style="background-color:white">
+			<button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	</form>
+</div>
+
+<div id="topani">
+ <h1>Lounges</h1>
+</div>
+</header>
+</head>
+
+<body>
+
+
+	<div class="loungechairbox">
+		<img src = "./images/l1.jpg" class="l1">
+		<div class ="over">
+		<div class="text"> $790
+		<p>CLICK AND SEE DETAILS</p></div>
+		</div>
+	</div>
+
+	<div class="loungechairbox">
+		<img src = "./images/l2.jpg" class="l2">
+		<div class ="over2">
+		<div class="text"> $460
+		<p>CLICK AND SEE DETAILS</p></div>
+		</div>
+	</div>
+	
+		<div class="loungechairbox">
+		<img src = "./images/l3.jpg" class="l3">
+		<div class ="over3">
+		<div class="text"> $980
+		<p>CLICK AND SEE DETAILS</p></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
