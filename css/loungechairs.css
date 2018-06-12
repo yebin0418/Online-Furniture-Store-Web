@@ -1,0 +1,96 @@
+body{
+  background-color: lavender;
+  font-family: monospace, Halvetica, sans-serif;
+}
+header #topani{
+  -webkit-animation: animate;
+  -webkit-animation-duration: 3s;
+  animation: animate;
+  animation-duration:3s;
+  position: relative;
+  animation-fill-mode: forwards;
+  font:Snell Roundhand, cursive;
+  font-size: 1vw;
+  color: rosybrown;
+  width:0;
+  display: inline-block;
+}
+@-webkit-keyframes animate {
+    from {left: 0px;}
+    to {left: 47%;}
+}
+@keyframes animate {
+    from {left: 0px;}
+	to {left: 47%;}
+}
+
+.loungechairbox {
+  position: relative;
+  width: 60%;
+  left: 36%;
+  display: inline-block;
+}
+.l1 {
+  position: relative;
+  width: 50%;
+}
+.over{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color:	cornflowerblue;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.loungechairbox:hover .over{
+  width:50%;
+}
+.l2{
+  position: relative;
+  width: 50%;
+}
+.over2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: gray;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.loungechairbox:hover .over2{
+  width:50%;
+}
+.l3{
+  position: relative;
+  width: 50%;
+}
+.over3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color:indianred;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.loungechairbox:hover .over3{
+  width:50%;
+}
+.text {
+  color: white;
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
