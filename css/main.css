@@ -1,30 +1,26 @@
-.mainpage{
+ .mainpage{
   font-family: monospace, Halvetica, sans-serif;
   font-size: 15px;
-  line-height: 1.5;
-  background-image:url(main.jpg);
-  background-image:url(second.jpg);
-  background-image:url(third.jpg);
-  background-image:url(fourth.jpg);
-  background-size: cover;
+  width: 100%; height: 100%;
+  background-image: url(g.png);
+  background-image: url(p.png);
   -webkit-animation-name: maintransition;
-  -webkit-animation-duration:  17s;
+  -webkit-animation-duration:  20s;
   animation-name:  maintransition;
-  animation-duration: 17s;
+  animation-duration: 20s;
   animation-iteration-count:infinite;
+  background-size: cover;
 }
-@-webkit-keyframes maintransition {
-  0% { background-image:url(main.jpg);}
-  30% { background-image:url(third.jpg);}
-  60% { background-image:url(second.jpg);}
-  100% { background-image:url(fourth.jpg);}
+
+ @-webkit-keyframes maintransition {
+  40% { background-image:url(g.png);}
+  90% { background-image:url(p.png);}
+
 }
 
 @keyframes maintransition {
-  0% { background-image:url(main.jpg);}
-  30% { background-image:url(third.jpg);}
-  60% { background-image:url(second.jpg);}
-  100% { background-image:url(fourth.jpg);}
+  40% { background-image:url(g.png);}
+  90% { background-image:url(p.png);}
 }
 .topnav{
   overflow: hidden;
