@@ -1,6 +1,5 @@
 body{
   background-color: sienna;
-  background-image: url(backphoto.jpg);
   font-family: monospace, Halvetica, sans-serif;
 
 }
@@ -15,8 +14,7 @@ header #topani{
   font-size: 1vw;
   color: rosybrown;
   width:0;
-  max-width:0;
-  display: inline;
+  display: inline-block;
 }
 @-webkit-keyframes animate {
     from {left: 0px;}
@@ -69,7 +67,42 @@ header #topani{
 .armchairbox:hover .over2{
   width:50%;
 }
-
+.a3{
+  position: relative;
+  width: 50%;
+}
+.over3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: palevioletred;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.armchairbox:hover .over3{
+  width:50%;
+}
+.a4 {
+  position: relative;
+  width: 50%;
+}
+.over4{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color:	burlywood;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+}
+.armchairbox:hover .over4 {
+  width:50%;
+}
 .text {
   color: white;
   font-size: 1vw;
