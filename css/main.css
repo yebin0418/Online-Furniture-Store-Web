@@ -91,8 +91,21 @@ header #branding{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.sg .main{
+	color: black;
+	border: none;
+	outline:none;
+	background-color: inherit;
+	float: right;
+	padding: 0px 30px 0px 30px;
+	font-size: 18px;
+}
+.sg button:hover{
+	color: indianred;
+}
+
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn  {display: none;}
+  .topnav a:not(:first-child), .dropdown .dropbtn, .sg .main {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -110,9 +123,12 @@ header #branding{
     display: block;
     text-align: left;
   }
-   .topnav.responsive .dropdown {float: none;}
+
+  .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive .dropdown .dropbtn 
+  .topnav.responsive .sg {position: relative;}
+  .topnav.responsive .sg .main  {
     display: block;
     width: 100%;
     text-align: left;
