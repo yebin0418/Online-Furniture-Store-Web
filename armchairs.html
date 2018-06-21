@@ -20,15 +20,21 @@
  	</div>
 </div>
  <a href="sofas.html">Sofas</a>
- <a href="contactUs.html">Contact us</a>
- <a button class= main onclick="document.getElementById('signin').style.display='block'"style="width:auto;">SIGN IN</button></a>
+  <a href="contactUs.html">CONTACT US</a>
+  <div class = "sg">
+  	<button class= "main" onclick="document.getElementById('signin').style.display='block'"style="width:auto;"><i class="fas fa-user-circle"></i></button>
+	 <button class="main" a href="cart.html"><i class="fas fa-shopping-bag"></i></a></button>
+  </div>
+
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
  </a>
  </div>
 <div id="signin" class="modal">
 	<form class="modal-content animate" >
-		<span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<div class="cbcontainer">
+			<span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
 		<div class="container">
 			<label for="uname"><b>Username</b></label>
 			<input type="text" placeholder="Enter Username" name="uname" required>
